@@ -14,10 +14,10 @@
 + (instancetype)ShareMessageTool;
 
 - (void)TPShowMessage:(NSString *)msg
-            DetailMsg:(NSString*)detailStr
+            DetailMsg:(NSString *)detailStr
              LeftItem:(NSString *)leftStr
-            RightItem:(NSString*)rightStr
-                   VC:(UIViewController*)vc
+            RightItem:(NSString *)rightStr
+                   VC:(UIViewController *)vc
            LeftAction:(dispatch_block_t)leftAction
           RightAction:(dispatch_block_t)rightAction;
 
