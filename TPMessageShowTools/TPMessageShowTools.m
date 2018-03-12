@@ -34,10 +34,10 @@ static TPMessageShowTools * _messageTool = nil;
 }
 
 - (void)TPShowMessage:(NSString *)msg
-            DetailMsg:(NSString*)detailStr
+            DetailMsg:(NSString *)detailStr
              LeftItem:(NSString *)leftStr
-            RightItem:(NSString*)rightStr
-                   VC:(UIViewController*)vc
+            RightItem:(NSString *)rightStr
+                   VC:(UIViewController *)vc
            LeftAction:(dispatch_block_t)leftAction
           RightAction:(dispatch_block_t)rightAction
 {
@@ -69,9 +69,9 @@ static TPMessageShowTools * _messageTool = nil;
 
 
 - (void)AlertCreateForTPShowMessage:(NSString *)msg
-                    DetailMsg:(NSString*)detailStr
+                    DetailMsg:(NSString *)detailStr
                     LeftItem:(NSString *)leftStr
-                    RightItem:(NSString*)rightStr
+                    RightItem:(NSString *)rightStr
 {
     UIAlertView * alert = [[UIAlertView alloc]initWithTitle:msg message:detailStr delegate:self cancelButtonTitle:leftStr otherButtonTitles:rightStr, nil];
     
@@ -89,9 +89,9 @@ static TPMessageShowTools * _messageTool = nil;
 }
 
 - (void)AlertControllerCreateForTPShowMessage:(NSString *)msg
-                                    DetailMsg:(NSString*)detailStr
+                                    DetailMsg:(NSString *)detailStr
                                      LeftItem:(NSString *)leftStr
-                                    RightItem:(NSString*)rightStr
+                                    RightItem:(NSString *)rightStr
                                            VC:(UIViewController*)vc
 {
     if (!vc) {
